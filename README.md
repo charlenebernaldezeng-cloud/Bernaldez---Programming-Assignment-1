@@ -10,7 +10,7 @@
   - [B. Username Builder Problem](#b-username-builder-problem)
   - [C. Bookend Swap Problem](#c-bookend-swap-problem)
 - [Project File Structure](#project-file-structure)
-- [Prerequisites & Requirements](#prerequisites--requirements)
+- [Requirements](requirements)
 - [How to Run](#how-to-run)
   - [Using Terminal / Command Prompt](#using-terminal--command-prompt)
   - [Using Jupyter Notebook](#using-jupyter-notebook)
@@ -52,3 +52,37 @@ def rotate_word(text):
     if not text:
         return text
     return text[1:] + text[0]
+
+### B. Username Builder Problem
+**Description:** Accepts a first name and last name, converts all letters to lowercase, removes all internal and surrounding spaces, and joins them together separated by a single period (`.`).
+
+**Implementation Code:**
+```python
+def make_username(first_name, last_name):
+    """
+    Converts names to lowercase, removes spaces, 
+    and combines them with a period.
+    """
+    clean_first = first_name.lower().replace(" ", "")
+    clean_last = last_name.lower().replace(" ", "")
+    return f"{clean_first}.{clean_last}"
+
+### C. Bookend Swap Problem
+**Description:** Accepts a list containing at least two elements. Uses extended sequence unpacking to separate the structure and returns a new list where the first and last elements have exchanged positions while keeping the middle intact without mutating the original list.
+
+**Implementation Code:**
+```python
+def swap_bookends(items):
+    """
+    Swaps the first and last elements of a list using extended unpacking
+    while preserving the middle elements.
+    """
+    first, *middle, last = items
+    return [last] + middle + [first]
+
+## Prerequisites & Requirements
+* **Python 3.x** installed on your system.
+* **Jupyter Notebook** (or JupyterLab / VS Code with Jupyter extension) to run the `.ipynb` file.
+* *Note: No external Python libraries or packages are required.*
+
+
