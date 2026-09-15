@@ -50,12 +50,36 @@ def rotate_word(text):
 
     # Move the first character to the end
     return string[1:] + string [0]
+    
+    # Ask the user to enter a word
     string = input ("Enter a word: ")
+    
+    #Display the rotated word
     print(rotate_word(string))
 
 ### B. Username Builder Problem
 * *Description:* Accepts a first name and last name, converts all letters to lowercase, removes all spaces from both names, and joins them using a single period (.).
 * Code:
+
+  def make_username (first_name, last_name):
+
+    # Convert the first name to lowercase and remove spaces
+    first_name = first_name.lower().replace(" ", "")
+
+    # Convert the last name to lowercase and remove spaces
+    last_name = last_name.lower().replace(" ", "")
+
+    # Join the processed first and last names using one period
+    return first_name + "." + last_name
+
+    # Ask user to enter First Name
+    first_name = input("Enter first name: ")
+
+    # Ask user to enter last Name
+    last_name = input("Enter last name: ")
+
+    # Display username
+    print(make_username(first_name, last_name))
 
 ### C.  Bookend Swap Problem
 * *Description:* Accepts a list containing at least two elements. Uses extended sequence unpacking to separate the structure and returns a new list where the first and last elements have exchanged positions while keeping the middle intact without mutating the original list.
