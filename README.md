@@ -41,7 +41,8 @@ This repository features Python-based solutions for exercises involving basic st
 
 ### A. Word Rotation Problem
 * *Description:* Accepts a non-empty string and moves its first character to the end while keeping all remaining characters in their original order. Preserves the capitalization of every character.
-  Code:
+
+   Code:
   
 def rotate_word(text):
 
@@ -59,6 +60,7 @@ def rotate_word(text):
 
 ### B. Username Builder Problem
 * *Description:* Accepts a first name and last name, converts all letters to lowercase, removes all spaces from both names, and joins them using a single period (.).
+
   Code:
 
       def make_username (first_name, last_name):
@@ -83,6 +85,7 @@ def rotate_word(text):
 
 ### C.  Bookend Swap Problem
 * *Description:* Accepts a list containing at least two elements. Uses extended sequence unpacking to separate the structure and returns a new list where the first and last elements have exchanged positions while keeping the middle intact without mutating the original list.
+
  Code:
 
       def swap_bookends(items):
