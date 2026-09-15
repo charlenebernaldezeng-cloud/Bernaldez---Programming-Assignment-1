@@ -14,17 +14,16 @@
 - [How to Run](#how-to-run)
   - [Using Terminal / Command Prompt](#using-terminal--command-prompt)
   - [Using Jupyter Notebook](#using-jupyter-notebook)
-- [Edge Cases Handled](#edge-cases-handled)
 
 ---
 
 ## Overview
 
-This project contains Python solutions for introductory string manipulation and list indexing exercises. The tasks demonstrate fundamental programming concepts including:
-* String indexing and slicing
-* String cleaning (.lower(), .replace())
-* Extended list unpacking (* operator)
-* Immutability and pure function design (non-destructive list operations)
+This repository features Python-based solutions for exercises involving basic string manipulation, sequence indexing, and list unpacking, highlighting programming concepts such as:
+* String slicing and indexing techniques
+* Manipulating strings using built-in methods (`.lower()`, `.replace()`)
+* Sequence manipulation via  list unpacking (`*` operator)
+* Construction of functions returning specified results
 
 ---
 
