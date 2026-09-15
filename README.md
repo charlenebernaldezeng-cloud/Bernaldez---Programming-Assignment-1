@@ -117,7 +117,18 @@ Bernaldez---Programming-Assignment-1/
 1. Clone or download the repository to your local machine.
 2. Open your terminal or command prompt and navigate to the project directory:
    ```bash
-   cd path/to/Bernaldez---Programming-Assignment-1 
+   cd path/to/Bernaldez---Programming-Assignment-1
+3. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook
+
+4. Open `ECE2112_PA1.ipynb` from the browser interface and run all cells sequentially (`Cell > Run All`).
+
+### Using Jupyter Notebook / VS Code
+1. Open the project folder in your preferred IDE (e.g., Visual Studio Code).
+2. Open `ECE2112_PA1.ipynb`.
+3. Ensure your Python kernel is active and execute the cells from top to bottom.
+   
 
 
 
