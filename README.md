@@ -61,30 +61,47 @@ def rotate_word(text):
 * *Description:* Accepts a first name and last name, converts all letters to lowercase, removes all spaces from both names, and joins them using a single period (.).
 * Code:
 
-  def make_username (first_name, last_name):
+      def make_username (first_name, last_name):
+    
+      # Convert the first name to lowercase and remove spaces
+      first_name = first_name.lower().replace(" ", "")
 
-    # Convert the first name to lowercase and remove spaces
-    first_name = first_name.lower().replace(" ", "")
+      # Convert the last name to lowercase and remove spaces
+      last_name = last_name.lower().replace(" ", "")
 
-    # Convert the last name to lowercase and remove spaces
-    last_name = last_name.lower().replace(" ", "")
+      # Join the processed first and last names using one period
+      return first_name + "." + last_name
 
-    # Join the processed first and last names using one period
-    return first_name + "." + last_name
+      # Ask user to enter First Name
+      first_name = input("Enter first name: ")
 
-    # Ask user to enter First Name
-    first_name = input("Enter first name: ")
+      # Ask user to enter last Name
+      last_name = input("Enter last name: ")
 
-    # Ask user to enter last Name
-    last_name = input("Enter last name: ")
-
-    # Display username
-    print(make_username(first_name, last_name))
+      # Display username
+      print(make_username(first_name, last_name))
 
 ### C.  Bookend Swap Problem
 * *Description:* Accepts a list containing at least two elements. Uses extended sequence unpacking to separate the structure and returns a new list where the first and last elements have exchanged positions while keeping the middle intact without mutating the original list.
 * Code:
 
+      def swap_bookends(items):
+
+      # Check if the list has at least two elements
+      if len(items) < 2:
+        return "Error: Please enter at least two elements."
+
+      # "first element, middle elements, and last element
+      first, *middle, last = items
+
+      # Return the new list with the first and last elements swapped
+      return [last] + middle + [first]
+
+      # Ask the user to enter the elements
+      items = input("Enter elements separated by spaces: ").split()
+
+      #Check the number of elements and display the result
+      print(swap_bookends(items))
 
 
 
