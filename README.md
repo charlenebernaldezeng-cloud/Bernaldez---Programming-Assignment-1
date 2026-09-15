@@ -2,15 +2,53 @@
 ### Name: Bernaldez, Charlene A.                                                                      
 ### Section: 2ECE-B
 
-#### Introduction
-This repository contains my solutions for Experiment 1: Introduction to Python Programming for ECE 2112: Advanced Computer Programming and Algorithms
+## Table of Contents
+- [Overview](#overview)
+- [Function Summary](#function-summary)
+- [Problem Specifications & Solutions](#problem-specifications--solutions)
+  - [A. Word Rotation Problem](#a-word-rotation-problem)
+  - [B. Username Builder Problem](#b-username-builder-problem)
+  - [C. Bookend Swap Problem](#c-bookend-swap-problem)
+- [Project File Structure](#project-file-structure)
+- [Prerequisites & Requirements](#prerequisites--requirements)
+- [How to Run](#how-to-run)
+  - [Using Terminal / Command Prompt](#using-terminal--command-prompt)
+  - [Using Jupyter Notebook](#using-jupyter-notebook)
+- [Edge Cases Handled](#edge-cases-handled)
 
-#### The programming assignment contains three Experiment Problems
-A.) Word Rotation Problem
-- In this problem, the program will first ask the user to enter a word. Once the code runs, the first character will be moved from the beginning of the string to the end, while keeping all remaining characters in their original order. The rotate_word() function uses string slicing to separate the first character from the rest of the string, then combines them in the new order.
-  
-B.) Username Builder Problem
-- For this problem, the program asks the user to enter their first and last name. It converts both names to lowercase and removes any spaces. Then it combines the two names with a period between them to create a username.
+---
 
-C.) Bookend Swap Problem
-- For this last problem, the program asks the user to enter elements separated by spaces. It first checks if the list has at least two elements. If there are enough elements, it swaps the first and last elements while keeping the middle elements in their original order. 
+## Overview
+
+This project contains Python solutions for introductory string manipulation and list indexing exercises. The tasks demonstrate fundamental programming concepts including:
+* String indexing and slicing
+* String cleaning (.lower(), .replace())
+* Extended list unpacking (* operator)
+* Immutability and pure function design (non-destructive list operations)
+
+---
+
+## Function Summary
+
+| Function | Input Parameters | Return Type | Key Logic |
+| :--- | :--- | :--- | :--- |
+| rotate_word(text) | text (str) | str | Moves index 0 to end using text[1:] + text[0] |
+| make_username(first_name, last_name) | first_name (str), last_name (str) | str | Lowercases, strips spaces, joins with . |
+| swap_bookends(items) | items (list) | list | Unpacks using first, *middle, last, swaps endpoints |
+
+---
+
+## Problem Specifications & Solutions
+
+### A. Word Rotation Problem
+* *Description:* Accepts a non-empty string and moves its first character to the end while keeping all remaining characters in their original order. Preserves the capitalization of every character.
+* *Implementation Code:*
+```python
+def rotate_word(text):
+    """
+    Moves the first character of the string to the end.
+    Preserves original capitalization.
+    """
+    if not text:
+        return text
+    return text[1:] + text[0]
