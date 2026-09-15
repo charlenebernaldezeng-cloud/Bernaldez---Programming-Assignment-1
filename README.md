@@ -106,7 +106,7 @@ def rotate_word(text):
       #Check the number of elements and display the result
       print(swap_bookends(items))
 
-    ## Project File Structure
+  ## Project File Structure
 ```text
 Bernaldez---Programming-Assignment-1/
 │
