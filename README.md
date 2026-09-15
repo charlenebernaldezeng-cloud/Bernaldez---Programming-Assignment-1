@@ -5,7 +5,7 @@
 ## Table of Contents
 - [Overview](#overview)
 - [Function Summary](#function-summary)
-- [Problem Specifications & Solutions](#problem-specifications--solutions)
+- [Problems & Solutions](#problem--solutions)
   - [A. Word Rotation Problem](#a-word-rotation-problem)
   - [B. Username Builder Problem](#b-username-builder-problem)
   - [C. Bookend Swap Problem](#c-bookend-swap-problem)
@@ -37,11 +37,11 @@ This repository features Python-based solutions for exercises involving basic st
 
 ---
 
-## Problem Specifications & Solutions
+## Problems & Solutions
 
 ### A. Word Rotation Problem
 * *Description:* Accepts a non-empty string and moves its first character to the end while keeping all remaining characters in their original order. Preserves the capitalization of every character.
-* *Implementation Code:*
+* Code:*
 ```python
 def rotate_word(text):
     """
