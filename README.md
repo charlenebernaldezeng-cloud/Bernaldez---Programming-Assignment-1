@@ -50,12 +50,8 @@ def rotate_word(text):
 
     # Move the first character to the end
     return string[1:] + string [0]
-    
-# Ask the user to enter a word
-string = input ("Enter a word: ")
-
-#Display the rotated word
-print(rotate_word(string))
+    string = input ("Enter a word: ")
+    print(rotate_word(string))
 
 ### B. Username Builder Problem
 * *Description:* Accepts a first name and last name, converts all letters to lowercase, removes all spaces from both names, and joins them using a single period (.).
